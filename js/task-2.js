@@ -27,6 +27,16 @@ const images = [
 
 const list = document.querySelector(".gallery");
 
-function createGallery(image) {
-
+function createGallery() {
+  const markup = images
+    .map((image) => `<li class="list-gallery"><img class="item-img" src="${image.url}" alt="${image.alt}" width="360" height="300"/></li>`)
+    .join("");
+  return markup;
 }
+
+
+list.innerHTML = createGallery(images);
+
+// list.forEach(function (image, index, images) {
+//   const listItem = document.createElement("li");
+// })

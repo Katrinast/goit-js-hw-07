@@ -31,6 +31,17 @@ h6 {
   margin: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
 #categories {
   display: flex;
   flex-direction: column;
@@ -85,6 +96,9 @@ h6 {
   padding: 8px 16px;
   width: 360px;
   height: 40px;
+}
+
+.input-anonymous::placeholder {
   color: #2e2f42;
   font-family: Montserrat;
   font-size: 16px;
@@ -109,4 +123,16 @@ h6 {
   border-radius: 8px;
   background: #fff;
   width: 408px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+  max-width: 1440px;
+  padding: 100px 156px;
+}
+
+.list-gallery {
+  width: calc((100% - 48px) / 3);
 }
