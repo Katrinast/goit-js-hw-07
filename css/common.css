@@ -116,15 +116,6 @@ button {
   letter-spacing: 0.04em;
 }
 
-.login-form {
-  display: ;
-  flex-direction: column;
-  gap: 16px;
-  border-radius: 8px;
-  background: #fff;
-  width: 408px;
-}
-
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -135,4 +126,73 @@ button {
 
 .list-gallery {
   width: calc((100% - 48px) / 3);
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-radius: 8px;
+  background: #fff;
+  max-width: 408px;
+  padding: 24px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+input {
+  display: block;
+  height: 40px;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.login-btn {
+  display: block;
+  height: 24px;
+  width: 54px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4e75ff;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.widget {
+  border-radius: 8px;
+  background-color: #fff;
+  max-width: 345px;
+  min-height: 280px;
+  margin: 0 auto;
+  padding: 100px 88px;
+}
+
+.change-color {
+  height: 24px;
+  max-width: 116px;
+  border-radius: 8px;
+  background-color: #4e75ff;
+  border: none;
+  align-items: center;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  margin: 0 auto;
+  margin-top: 24px;
+  display: block;
 }
