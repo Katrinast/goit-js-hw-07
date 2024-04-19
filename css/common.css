@@ -37,6 +37,7 @@ img {
 }
 
 button {
+  display: block;
   cursor: pointer;
   margin: 0;
   padding: 0;
@@ -155,10 +156,8 @@ input {
   margin-bottom: 8px;
 }
 
-.login-btn {
-  display: block;
-  height: 24px;
-  width: 54px;
+.btn {
+  padding: 8px 16px;
   border: none;
   border-radius: 8px;
   background-color: #4e75ff;
@@ -168,6 +167,13 @@ input {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  height: 40px;
+  width: 120px;
+}
+
+.login-btn {
+  height: 40px;
+  width: 86px;
 }
 
 .widget {
@@ -180,19 +186,38 @@ input {
 }
 
 .change-color {
-  height: 24px;
-  max-width: 116px;
-  border-radius: 8px;
-  background-color: #4e75ff;
-  border: none;
-  align-items: center;
-  color: #fff;
-  font-family: Montserrat;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
+  height: 40px;
+  width: 148px;
   margin: 0 auto;
   margin-top: 24px;
-  display: block;
+}
+
+#controls {
+  display: flex;
+  padding: 32px;
+  gap: 16px;
+  width: 486px;
+  min-height: 134px;
+  justify-content: center;
+  border-radius: 8px;
+  background: #f6f6fe;
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
+
+.amount-input {
+  width: 150px;
+  height: 40px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid #808080;
+}
+
+#boxes {
+  width: 486px;
+  min-height: 134px;
+  padding: 32px;
+  border-radius: 8px;
+  background: #f6f6fe;
+  margin: 0 auto;
 }
