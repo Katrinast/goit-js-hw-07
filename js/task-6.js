@@ -22,6 +22,7 @@ buttonCreate.addEventListener("click", () => {
 
 function createBoxes(amount) {
   let size = 30;
+  const fragment = document.createDocumentFragment();
   for (let i = 0; i < amount; i++){
     const box = document.createElement('div');
     box.style.width = size + 'px';
@@ -29,7 +30,9 @@ function createBoxes(amount) {
     box.style.backgroundColor = getRandomHexColor();
     boxContainer.appendChild(box);
     size += 10;
+    fragment.appendChild(box);
   }
+  boxContainer.appendChild(fragment);
 }
 
 function destroyBoxes () {
